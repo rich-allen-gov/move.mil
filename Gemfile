@@ -24,6 +24,16 @@ gem 'sass-rails', '~> 5.0', '>= 5.0.7'
 gem 'uglifier', '~> 4.1', '>= 4.1.6'
 gem 'uswds-rails', '~> 1.4', '>= 1.4.6'
 gem 'will_paginate', '~> 3.1', '>= 3.1.6'
+# A Ruby on Rails CMS that supports Rails 5.1
+gem 'refinerycms', '~> 4.0', '>= 4.0.1'
+# A Devise authentication extension for Refinery CMS
+gem 'refinerycms-authentication-devise', '~> 2.0'
+# blog engine designed for integration with Refinery CMS
+gem 'refinerycms-blog', git: 'https://github.com/refinery/refinerycms-blog', branch: 'master'
+# Enables on-the-fly processing for any content type
+gem 'dragonfly', '~> 1.1', '>= 1.1.4'
+# Adds WYMeditor support to Refinery CMS for visual editing
+gem 'refinerycms-wymeditor', ['~> 2.0', '>= 2.0.0']
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-html5shiv', '3.7.3'

@@ -14,6 +14,10 @@ require 'yaml'
 
 require_relative 'seeds/baseline_rates/domestic_400ng'
 
+
+# Added by Refinery CMS Pages extension
+Refinery::Pages::Engine.load_seed
+
 puts 'Loading tutorials...'
 tutorials = YAML::load_file(Rails.root.join('db', 'seeds', 'tutorials.yml'))
 
@@ -162,3 +166,6 @@ else
     end
   end
 end
+
+# Added by Refinery CMS Blog engine
+Refinery::Blog::Engine.load_seed
